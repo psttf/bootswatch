@@ -7,7 +7,6 @@
 // Navbar =====================================================================
 
 .navbar {
-
 	border-bottom: 1px solid @gray-dark;
 }
 
@@ -98,7 +97,7 @@ legend {
 }
 
 .input-group-addon {
-	background-color: @btn-default-bg;
+	color: @headings-color;
 }
 
 // Navs =======================================================================
@@ -107,8 +106,8 @@ legend {
 
 	.caret,
 	a:hover .caret {
-		border-top-color: #fff;
-		border-bottom-color: #fff;
+		border-top-color: @headings-color;
+		border-bottom-color: @headings-color;
 	}
 }
 
@@ -143,4 +142,8 @@ legend {
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
 	}
+}
+
+.well {
+	border-color: @well-bg;
 }

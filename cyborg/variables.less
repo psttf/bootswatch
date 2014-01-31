@@ -9,25 +9,25 @@
 // Grays
 // -------------------------
 
-@gray-darker:            #222;
-@gray-dark:              #282828;
+@gray-darker:            #333;
+@gray-dark:              #5a5a5a;
 @gray:                   #555;
-@gray-light:             #888;
+@gray-light:             #999;
 @gray-lighter:           #ADAFAE; // #eee
 
 // Brand colors
 // -------------------------
 
-@brand-primary:         #2A9FD6;
-@brand-success:         #77B300;
-@brand-warning:         #FF8800;
-@brand-danger:          #CC0000;
-@brand-info:            #9933CC;
+@brand-primary:         #92B3E8;
+@brand-success:         #8AC520;
+@brand-warning:         #F57E00;
+@brand-danger:          #C20000;
+@brand-info:            #9E4BC7;
 
 // Scaffolding
 // -------------------------
 
-@body-bg:               #060606;
+@body-bg:               #3C3F41;
 @text-color:            @gray-light;
 
 // Links
@@ -58,10 +58,10 @@
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
-@headings-font-family:    @font-family-base;
+@headings-font-family:    "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
-@headings-color:          #fff;
+@headings-color:          #ddd;
 
 
 // Iconography
@@ -75,14 +75,14 @@
 // -------------------------
 // Based on 14px font-size and 1.428 line-height (~20px to start)
 
-@padding-base-vertical:          8px;
-@padding-base-horizontal:        12px;
+@padding-base-vertical:          6px;
+@padding-base-horizontal:        9px;
 
-@padding-large-vertical:         14px;
-@padding-large-horizontal:       16px;
+@padding-large-vertical:         12px;
+@padding-large-horizontal:       14px;
 
-@padding-small-vertical:         5px;
-@padding-small-horizontal:       10px;
+@padding-small-vertical:         4px;
+@padding-small-horizontal:       5px;
 
 @padding-xs-vertical:            1px;
 @padding-xs-horizontal:          5px;
@@ -90,9 +90,9 @@
 @line-height-large:              1.33;
 @line-height-small:              1.5;
 
-@border-radius-base:             4px;
-@border-radius-large:            6px;
-@border-radius-small:            3px;
+@border-radius-base:             10px;
+@border-radius-large:            12px;
+@border-radius-small:            8px;
 
 @component-active-color:         #fff;
 @component-active-bg:            @brand-primary;
@@ -149,11 +149,11 @@
 // Forms
 // -------------------------
 
-@input-bg:                       #fff;
+@input-bg:                       @gray-darker;
 @input-bg-disabled:              @gray-lighter;
 
 @input-color:                    @text-color;
-@input-border:                   @gray-dark;
+@input-border:                   @gray-darker;
 @input-border-radius:            @border-radius-base;
 @input-border-focus:             #66afe9;
 
@@ -166,8 +166,8 @@
 @legend-color:                   @text-color;
 @legend-border-color:            @gray-dark;
 
-@input-group-addon-bg:           @gray-lighter;
-@input-group-addon-border-color: @input-border;
+@input-group-addon-bg:           @btn-default-bg;
+@input-group-addon-border-color: @input-group-addon-bg;
 
 
 // Dropdowns
@@ -268,11 +268,11 @@
 
 @navbar-default-color:             @text-color;
 @navbar-default-bg:                @body-bg;
-@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-border:            @body-bg;
 
 // Navbar links
 @navbar-default-link-color:                @text-color;
-@navbar-default-link-hover-color:          #fff;
+@navbar-default-link-hover-color:          @headings-color;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         #fff;
 @navbar-default-link-active-bg:            transparent;
@@ -280,7 +280,7 @@
 @navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
-@navbar-default-brand-color:               #fff;
+@navbar-default-brand-color:               @headings-color;
 @navbar-default-brand-hover-color:         #fff;
 @navbar-default-brand-hover-bg:            transparent;
 
@@ -295,11 +295,11 @@
 // Reset inverted navbar basics
 @navbar-inverse-color:                      @gray-light;
 @navbar-inverse-bg:                         @gray-darker;
-@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-border:                     @gray-darker;
 
 // Inverted navbar links
 @navbar-inverse-link-color:                 @gray-light;
-@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-color:           @headings-color;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             transparent;
@@ -307,7 +307,7 @@
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
-@navbar-inverse-brand-color:                #fff;
+@navbar-inverse-brand-color:                @headings-color;
 @navbar-inverse-brand-hover-color:          #fff;
 @navbar-inverse-brand-hover-bg:             transparent;
 
@@ -612,7 +612,7 @@
 @text-muted:                  @gray-light;
 @abbr-border-color:           @gray-light;
 @headings-small-color:        @gray-light;
-@blockquote-small-color:      @gray;
+@blockquote-small-color:      darken(@gray-light, 10%);
 @blockquote-border-color:     @gray-dark;
 @page-header-border-color:    @gray-dark;
 
